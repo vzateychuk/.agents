@@ -1,21 +1,22 @@
 ---
 name: testing
-description: Write tests, run test suites, and analyze coverage. Use when user asks to write tests, check coverage, or understand what is tested. Do NOT use for debugging failing tests (bugs in code) — use debug skill for that. Applies to any stack.
+description: Design, write, and analyze tests across any stack. Creates unit/integration/E2E test code, coverage strategies, and gap analysis. Use when writing new tests or analyzing coverage. Do NOT execute tests (use language-specific tools: python-tools for Python, nodejs-ts-ops for JS/TS). Do NOT debug failing tests — use debug skill for that.
 ---
 
 ## Scope
 
 **This skill handles:**
-- Writing new tests (unit, integration, E2E)
-- Running test suites and analyzing coverage
-- Test planning and design
-- Coverage gap analysis and recommendations
-- Proactive test improvements and maintenance
+- Writing new tests (unit, integration, E2E) — code and structure
+- Test planning and design patterns
+- Coverage gap analysis and strategic recommendations
+- Proactive test improvements and test quality review
+- Test framework selection and best practices
 
 **This skill does NOT handle:**
+- Executing/running tests (use **python-tools** for Python, **nodejs-ts-ops** for JS/TS)
 - Debugging failing tests or investigating bugs (use **debug** skill)
-- Runtime errors in production code (use **debug** skill)
-- General code review (use **review-quality** skill)
+- General code review outside of test code (use **review-quality** skill)
+- Language-specific test commands and tooling
 
 ## Purpose
 - Run all test types (unit, integration, E2E).

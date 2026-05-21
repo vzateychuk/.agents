@@ -1,15 +1,24 @@
 ---
 name: 'nodejs-ts-ops'
-description: 'Node.js/TypeScript operations: filesystem, npm/pnpm workspaces, Vitest, Playwright, linting.'
+description: 'Node.js/TypeScript test execution and code quality via npm/pnpm (vitest, playwright, eslint, prettier). Runs tests and formats code. For test design/strategy use testing skill instead.'
 ---
 
 # Skill: Node.js/TypeScript Operations
 
+## When to use
+- "run tests" / "execute tests"
+- "run vitest" / "run playwright E2E"
+- "generate test coverage"
+- "lint TypeScript" / "format code"
+- "verify types" / "check tsc"
+
+NOT for: Test design, coverage strategy, or deciding which tests to write (use **testing** skill for that)
+
 ## Capabilities
 - **Workspaces Management**: Support for `npm workspaces` or `pnpm`. Execution of commands in specific packages.
-- **Testing**: Native support for `vitest`, `supertest` (API), and `playwright/cypress` (E2E).
+- **Testing**: Execute `vitest`, `supertest` (API), and `playwright/cypress` (E2E) test suites.
 - **Environment**: Handling `.env` files and Docker-based environments.
-- **Code Quality**: Integration with `eslint`, `prettier`, and `tsc` for type checking.
+- **Code Quality**: Integration with `eslint`, `prettier`, and `tsc` for type checking and linting.
 
 ## Tool Usage Rules
 1. **`read_file` / `edit_file`**: Always check for existing `import` types and path aliases (`@/`).
