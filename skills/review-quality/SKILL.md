@@ -1,6 +1,6 @@
 ---
 name: review-quality
-description: Code and quality review (any stack). Finds technical defects, logic errors, anti-patterns, architecture violations, and style/convention breaches. Focus: code structure, readability, maintainability, testing. Do NOT focus on security issues — use security skill for auth, secrets, injection, data leaks.
+description: "Code and quality review (any stack). Finds technical defects, logic errors, anti-patterns, architecture violations, and style/convention breaches. Focus: code structure, readability, maintainability, testing. Do NOT focus on security issues — use security skill for auth, secrets, injection, data leaks."
 ---
 
 ## Scope

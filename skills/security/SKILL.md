@@ -1,6 +1,6 @@
 ---
 name: security
-description: Review and harden applications and APIs for security risks only: authentication, authorization, hardcoded secrets, input validation, SQL/command injection, data leaks, open redirects, CSRF. Do NOT use for general code quality, style, architecture, or logic review — use review-quality skill for that. Applies to any stack.
+description: "Review and harden applications and APIs for security risks only: authentication, authorization, hardcoded secrets, input validation, SQL/command injection, data leaks, open redirects, CSRF. Do NOT use for general code quality, style, architecture, or logic review — use review-quality skill for that. Applies to any stack."
 ---
 
 ## Scope

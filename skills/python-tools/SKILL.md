@@ -1,6 +1,6 @@
 ---
 name: python-tools
-description: Python code helper toolkit: FS formatting and testing via uv (ruff, pytest, coverage).
+description: "Python code helper toolkit: FS formatting and testing via uv (ruff, pytest, coverage)."
 ---
 
 ## Purpose

@@ -14,7 +14,9 @@ allowed-tools: Bash
 - Imperative mood: "Add feature" not "Added feature"
 - First line: max 50 chars
 - Body: wrapped at 72 chars, bullet points with verbs
-- No AI mentions, no emojis, no secrets (.env, credentials, keys)
+- NO emojis or Unicode symbols anywhere in the message
+- NO AI/tool mentions: forbidden phrases include "Generated with", "Co-Authored-By: Claude", "AI consultant", "Created by AI", or any reference to AI tools
+- No secrets (.env, credentials, keys)
 - Focus on WHAT and WHY (business intent), not HOW (implementation)
 - Reference issue-ID when applicable (e.g., "Closes #42")
 
@@ -27,7 +29,7 @@ allowed-tools: Bash
 2. Draft one-line summary in imperative form, ≤ 50 chars
 3. Use format: `(<type>) description` (e.g., `feat(api): add user deletion`)
 4. Draft body: bullet points with verbs; wrap at 72 chars
-5. Verify: no AI mention, neutral tone, no secrets
+5. Verify: no emojis, no AI/tool mention, neutral tone, no secrets
 
 ## Main Commit Types (6)
 | Type | Purpose | Example |
