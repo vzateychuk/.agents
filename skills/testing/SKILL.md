@@ -1,6 +1,6 @@
 ---
 name: testing
-description: Design, write, and analyze tests across any stack. Creates unit/integration/E2E test code, coverage strategies, and gap analysis. Use when writing new tests or analyzing coverage. Do NOT execute tests (use language-specific tools: python-tools for Python, nodejs-ts-ops for JS/TS). Do NOT debug failing tests — use debug skill for that.
+description: 'Creates unit/integration/E2E test code, coverage strategies, and gap analysis. Use when writing new tests or analyzing coverage. Do NOT execute tests (use language-specific tools: python-tools for Python, nodejs-ts-ops for JS/TS). Do NOT debug failing tests — use debug skill.'
 ---
 
 ## Scope

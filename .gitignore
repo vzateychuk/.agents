@@ -1,5 +1,9 @@
 # .gitignore
 .cursor/
 .idea/
+.claude/
+.pi/
+.copilot/
+.gemini/
 .vscode/
 .system/
