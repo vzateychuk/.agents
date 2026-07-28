@@ -1,5 +1,5 @@
-# [managed] auto-generated includes - do not edit this block manually
-@./rules/clarify-before-planning.md
-@./rules/no-guessing.md
-@./rules/repo-map-navigation.md
+# [managed]
+@~/.agents/rules/clarify-before-planning.md
+@~/.agents/rules/no-guessing.md
+@~/.agents/rules/repo-map-navigation.md
 # [/managed]

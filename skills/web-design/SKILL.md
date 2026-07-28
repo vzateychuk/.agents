@@ -1,6 +1,9 @@
 ---
 name: web-design
-description: Design and build simple, user-friendly, highly usable frontend interfaces for websites, components, dashboards, and product flows. Prioritizes clarity, accessibility, responsiveness, and task completion over visual complexity or novelty.
+description: |-
+  Designs and builds simple, user-friendly web and UI components for websites, dashboards, flows, and interactive experiences.
+  Prioritizes clarity, accessibility, responsiveness, and task completion over visual complexity or novelty.
+  Triggers on user requests like "design web interface", "create dashboard component", "check UI flow", or "build responsive layout".
 ---
 
 **Mission**: Create interfaces that are easy to understand, easy to use, and pleasant without unnecessary complexity.

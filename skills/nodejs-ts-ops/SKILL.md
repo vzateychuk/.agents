@@ -1,6 +1,9 @@
 ---
 name: 'nodejs-ts-ops'
-description: 'Node.js/TypeScript test execution and code quality via npm/pnpm (vitest, playwright, eslint, prettier). Runs tests and formats code. For test design/strategy use testing skill instead.'
+description: |-
+  Executes tests and ensures code quality for Node.js and TypeScript projects using npm/pnpm (vitest, playwright, eslint, prettier).
+  Triggers on user requests like "run tests", "lint TypeScript", "format code", "check types", or "execute vitest".
+  Fully automated workflow including test coverage, linting, type checking, and formatting. Do not use for test design or coverage strategy (use **testing** skill instead).
 ---
 
 # Skill: Node.js/TypeScript Operations

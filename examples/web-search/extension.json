@@ -1,0 +1,14 @@
+{
+  "name": "web-search",
+  "version": "0.1.0",
+  "description": "Performs web search using search engines like DuckDuckGo in real-time.",
+  "author": "You",
+  "entry_point": "extension.py",
+  "icon": "🔍",
+  "commands": {
+    "search-web": {
+      "description": "Search the web for results.",
+      "args": ["query"]
+    }
+  }
+}

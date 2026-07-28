@@ -1,6 +1,9 @@
 ---
 name: security
-description: "Review and harden applications and APIs for security risks only: authentication, authorization, hardcoded secrets, input validation, SQL/command injection, data leaks, open redirects, CSRF. Do NOT use for general code quality, style, architecture, or logic review — use review-quality skill for that. Applies to any stack."
+description: |-
+  Conducts security reviews and hardens applications and APIs for vulnerabilities: authentication, authorization, secrets, injection, data leaks, open redirects, and CSRF.
+  Triggers on user requests like "security review this PR", "does this leak secrets?", "check for SQL injection", "add security checklist", or "review auth setup".
+  Not for general code quality or logic review (use **review-quality** skill).
 ---
 
 ## Scope

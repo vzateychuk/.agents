@@ -1,6 +1,10 @@
 ---
 name: repo-map
-description: Use and maintain repo_map.md as the primary AI-agnostic project index. Read it when present, detect when it is missing or stale, and ask before creating or updating it.
+description: |-
+  Uses and maintains the AI-agnostic `repo_map.md` as the primary project index for navigation within a codebase.
+  Automatically detects when `repo_map.md` is missing or stale (changes in project structure, dependencies, or conventions).
+  Triggers on user requests like "show repo map", "update project map", "what's the project structure?", or "navigate codebase".
+  Always asks for confirmation before creating or updating `repo_map.md`.
 ---
 
 # Repo Map Skill
