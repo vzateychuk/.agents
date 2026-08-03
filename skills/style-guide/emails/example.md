@@ -2,9 +2,9 @@
 
 ## Example 1: Formal HR / operations request
 
-**Subject:** Temporary salary payment method (Mar–May 2026)
+Subject: Temporary salary payment method (Mar–May 2026)
 
-**Body:**
+Body:
 Dear Operations and HR Team,
 
 I would like to request a temporary change to my salary payment method for March–May 2026.
@@ -24,9 +24,9 @@ Vladimir Zateychuk
 
 ## Example 2: Formal FYI / compliance heads-up
 
-**Subject:** Heads-up: outbound SWIFT transfer USD 100 (TBC → brokerage)
+Subject: Heads-up: outbound SWIFT transfer USD 100 (TBC → brokerage)
 
-**Body:**
+Body:
 Dear Salome,
 
 I have initiated a small outbound SWIFT transfer of 100 USD from my TBC USD account to my personal brokerage account at Freedom Finance Global PLC (Kazakhstan). Screenshot attached.
@@ -42,9 +42,9 @@ Vladimir Zateychuk
 
 ## Example 3: Internal update
 
-**Subject:** Notes from today's sync
+Subject: Notes from today's sync
 
-**Body:**
+Body:
 Hi team,
 
 Quick notes from our meeting today:
@@ -61,9 +61,9 @@ Alex
 
 ## Example 4: Help request with due diligence
 
-**Subject:** AD groups for OpenShift Edit Route (UAT)
+Subject: AD groups for OpenShift Edit Route (UAT)
 
-**Body:**
+Body:
 Hi Noel, colleagues,
 
 I'm writing runbooks for git-proxy (#176099) and using CALM 175021 as a reference. I need help understanding how to create AD groups and set up Edit Route access in UAT — I could not figure it out on my own.

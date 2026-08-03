@@ -4,7 +4,7 @@ description: Friendly or formal email tone for engineering peers and for HR, ope
 applies_to: [email]
 tone: friendly
 audience: [developer, team lead, manager, colleague, hr, operations, bank, advisor]
-version: 6
+version: 7
 ---
 
 # Email Style — Friendly & Formal
@@ -38,6 +38,7 @@ version: 6
 
 ## Formatting
 - One blank line between paragraphs. Prefer plain paragraphs and simple lists.
+- Prefer plain text without `**` markdown bold. Use paragraphs and lists for emphasis.
 - Numbered lists for 3+ questions; label question topics when helpful.
 - In evidence lines, include exact amounts, accounts, commands, hosts, and results.
 - Always write in English.

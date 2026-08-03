@@ -4,7 +4,7 @@ description: Concise, decision-oriented style for Jira tickets, stories, and epi
 applies_to: [jira]
 tone: concise
 audience: [developer, team lead, manager, colleague]
-version: 3
+version: 4
 ---
 
 # Jira Style — Concise & Decision-Oriented
@@ -38,7 +38,7 @@ Add when needed:
 - Exact ticket IDs, repo URLs, package names, versions, and environment names.
 
 ## Formatting
-- Bold section labels (`**Problem:**`, `**Goal:**`).
+- Plain section labels (`Problem:`, `Goal:`) without `**` markdown bold.
 - Numbered lists for options; bullets for criteria, deliverables, scope, and dependencies.
 - One blank line between sections. Prefer plain text. Always English.
 

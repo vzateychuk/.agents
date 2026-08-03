@@ -4,7 +4,7 @@ description: Compact, conversational tone for messenger apps like Slack, Teams, 
 applies_to: [messenger]
 tone: conversational
 audience: [developer, team lead, manager, colleague]
-version: 3
+version: 4
 ---
 
 # Messenger Style — Compact & Conversational
@@ -32,6 +32,7 @@ version: 3
 ## Formatting
 - One idea per line.
 - Always write in English.
+- Prefer plain text without `**` markdown bold. Use line breaks and lists for emphasis.
 - Use `code` formatting for technical terms or commands.
 
 ## Edge Cases

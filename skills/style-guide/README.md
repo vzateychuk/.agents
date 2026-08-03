@@ -41,6 +41,7 @@ The skill activates on user requests to:
 - Always English
 - No emojis
 - Prefer bullet points over tables
+- For email, messenger, and jira: plain text without `**` bold markers
 - No AI traces
 - No prohibitions in style descriptions
 - Expand or avoid abbreviations

@@ -47,3 +47,4 @@ Each topic lives in its own folder with a rule file and an example file.
 
 ## Common Rules
 Always read `_common.md` before applying any style — it contains the shared grammar, formatting, and tone rules.
+For email, messenger, and jira output, prefer plain text without `**` bold markers; use labels, line breaks, and lists for emphasis.

@@ -2,7 +2,7 @@
 name: _common
 description: Common writing rules that apply to all content types.
 applies_to: [email, messenger, techdocs, support, jira]
-version: 3
+version: 4
 ---
 
 # Common Writing Rules
@@ -15,7 +15,7 @@ version: 3
 - Prefer bullet points over tables.
 - Use short paragraphs (2-4 sentences max).
 - Use H1/H2 headings for techdocs and support content.
-- Use bold section labels for jira descriptions (Problem, Goal, Options, Deliverables).
+- For jira, email, and messenger: use plain section labels (`Problem:`, `Goal:`) without `**` markdown bold. Rely on line breaks, labels, and lists for emphasis.
 - Minimize markdown. Use plain text when possible.
 - Keep messages short and direct. Avoid long walls of text.
 
