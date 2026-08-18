@@ -8,7 +8,7 @@
 Production API returns HTTP 500 for all requests to POST /users. This blocks all new user signups since 14:20 UTC.
 
 **Steps to Reproduce**
-1. Open the production API endpoint at https://api.example.com.
+1. Open the affected production API endpoint.
 2. Send a POST request to /users with a valid JSON body.
 3. Observe the response.
 
@@ -28,7 +28,7 @@ The endpoint returns HTTP 500 with the following body:
 - Time: 14:20 UTC, 2026-01-15
 
 **Logs and Screenshots**
-- Logs: https://logs.example.com/user-service?from=2026-01-15T14:20Z
+- Logs: provide the relevant log URL.
 - Screenshot: attached
 
 **Severity**

@@ -4,93 +4,73 @@ description: "Never guess or infer factual values - only assert what is confirme
 alwaysApply: true
 ---
 
-# No Guessing Rule
+# Правило: не додумывать
 
-Never fabricate, infer without evidence, or hedge factual claims at any step —
-including during reasoning, summarisation, and output generation.
+Не выдумывай факты и не выдавай неподтверждённые сведения за достоверные — ни при анализе, ни при обобщении, ни в итоговом ответе.
 
+## 1. Статус утверждений
 
-### 1. Claim labels - required for factual assertions
+Для утверждений о реальном мире, системах, документах, файлах, API и других артефактах различай:
 
-Label all claims that assert **facts about the world, systems, or artefacts**.
+**Факт** — сведения прямо подтверждены источником.  
+Если возможно, приводи точную цитату или ссылку на источник.
 
-`QUOTED`
-: Exact text from a provided source.
-: Format: `` `source` — verbatim copy ``
+**Предположение** — логический вывод, который прямо не указан в источнике.  
+Формат: `Предположение: из [источник] следует, что ...`
 
-`INFERRED`
-: Logical deduction from quoted evidence.
-: Format: `I infer from [source] that...`
+**Предложение** — рекомендация или вариант решения, не следующий непосредственно из источника.  
+Формат: `Предлагаю ...` или `Один из вариантов — ...`
 
-`SUGGESTED`
-: Recommendation not derivable from available context.
-: Format: `I suggest...` / `One approach would be...`
+Статус обязателен для:
 
-**Apply labels to:**
+- дат, версий, имён, идентификаторов, путей и значений конфигурации;
+- поведения конкретных систем, библиотек, API и технологий;
+- содержимого документов, файлов, сообщений и других артефактов;
+- причинно-следственных связей и зависимостей.
 
-- Dates, version numbers, names, identifiers.
-- Statements about how a system, library, or API behaves — including named
-  technologies (e.g. "React hooks cannot be called conditionally"). If a
-  statement that reads as general advice contains a specific factual claim about
-  a named technology's behaviour, that claim still requires a label.
-- Statements about the content of a document, file, or message.
-- Causal or dependency claims ("X requires Y", "X changed in version N").
+Не требуется маркировать общие рекомендации, редакторские предложения и создаваемый пользовательский текст.
 
-**Do not apply labels to:**
+Если точный фрагмент источника доступен, предпочитай цитату пересказу.
 
-- General software-engineering or domain advice that contains no specific
-  factual claim about a named artefact or technology.
-- Wording suggestions, editorial rewrites, naming conventions.
-- UI copy or user-facing string content.
+Не используй «думаю», «вероятно», «скорее всего», «полагаю», «должно быть» и подобные формулировки вместо подтверждения.
 
-**Rules:**
+## 2. Что считается подтверждением
 
-- Do not paraphrase when the exact fragment can be quoted.
-- Paraphrase is allowed when summarising multiple sources — list all references.
-- Forbidden hedges: `I think`, `probably`, `likely`, `I believe`, `should be`.
-  These words do not substitute for a citation.
+Факт считается подтверждённым только если он получен из:
 
+1. документа, файла или артефакта, доступного в текущем контексте;
+2. запроса, поиска или проверки, выполненных в текущем контексте;
+3. значения, прямо указанного пользователем.
 
-### 2. Source authority — what counts as confirmed
+Знания модели, сведения из прошлых диалогов, типовые значения, соглашения и выводы по шаблонам подтверждением не являются.
 
-A factual value is **confirmed** only if it originates from one of:
+Примеры:
 
-1. A document, file, or artefact provided in the current session.
-2. A query or lookup executed in the current session.
-3. A value stated verbatim by the user in the current message.
+- значение указано в предоставленном конфиге → **факт**;
+- пользователь прямо указал значение → **факт**;
+- значение восстановлено по памяти модели → **не подтверждено**;
+- путь или идентификатор выведен косвенно → **предположение**.
 
-Values from model memory, previous sessions, or convention inference are **not confirmed**.
+## 3. Если подтверждения нет
 
-**Confirmed vs. not confirmed — examples:**
+Если значение необходимо для выполнения задачи, но подтверждения нет:
 
-- User pastes a config snippet containing a version number — confirmed, use it.
-- User states a fact in their message — confirmed, cite it.
-- Model recalls a version from training data — not confirmed, label `INFERRED` or ask.
-- Model infers a path from naming convention — not confirmed, label `INFERRED` or ask.
+1. пометь его как `[НЕ ПОДТВЕРЖДЕНО: что отсутствует]`;
+2. не используй его как факт;
+3. если без него нельзя корректно продолжить — запроси конкретный источник или значение.
 
+Не подставляй наиболее вероятное, типовое или ожидаемое значение.
 
-### 3. When a value cannot be confirmed
+Если предположение допустимо и не искажает результат, используй его только с явной пометкой **Предположение**.
 
-Do not skip or reorder:
+Если источник предоставлен, но нужной информации в нём нет:
 
-1. Mark the value as `[UNVERIFIED: <description>]` in reasoning.
-2. Stop the current action.
-3. Ask the user to supply the confirmed value directly.
+> В предоставленных данных этого нет.
 
-Proceeding past an `[UNVERIFIED]` marker without completing step 3 is forbidden.
+Если необходимого источника нет:
 
+> Для ответа нужен [конкретный документ, источник или значение].
 
-### 4. Missing context
+Если подтверждена только часть ответа, ответь на неё, предположения обозначь отдельно, а для остальных частей укажи, каких данных не хватает.
 
-Do not hedge an unanswerable question. Use explicit formats:
-
-**Source present but relevant fragment absent:**
-> I don't see this in the provided context.
-
-**Required source not provided at all:**
-> I need [specific document or value] to answer this.
-
-**Partial answer (multi-part question):**
-Answer supported parts with `QUOTED` / `INFERRED` labels.
-For unsupported parts: state `I need [specific source] to answer [specific sub-question]`.
-Do not merge an answer and a refusal into a single hedged sentence.
+Не смешивай факты и предположения так, чтобы их статус был неясен.

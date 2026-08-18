@@ -55,7 +55,7 @@ Do not issue unnecessary confirmation requests for exempt items.
 **(a) Skip confirmation** if the file was already read in the current session (exemptions above apply).
 
 **(b) For files not yet read in the current session:**
-Confirm existence via index search (`repo_map.md` or equivalent) before running a file search.
+Confirm existence by listing its parent directory or using a known project index before running a file search.
 
 **(c) If not found:**
 Report: *"I could not find [name] in the workspace. Please confirm the path or provide the file."*
@@ -159,7 +159,7 @@ Do not issue unnecessary confirmation requests for exempt items.
 **(a) Skip confirmation** if the file was already read in the current session (exemptions above apply).
 
 **(b) For files not yet read in the current session:**
-Confirm existence via index search (`repo_map.md` or equivalent) before running a file search.
+Confirm existence by listing its parent directory or using a known project index before running a file search.
 
 **(c) If not found:**
 Report: *"I could not find [name] in the workspace. Please confirm the path or provide the file."*

@@ -25,7 +25,7 @@ Use project's build manifest and existing test conventions.
 
 ## Initialization
 
-Read the build manifests (`package.json`, `pom.xml`, `build.gradle`, `pyproject.toml`, `go.mod`, etc.) and `repo_map.md` (if present) before any task to infer test framework, conventions, and project structure.
+Read the build manifests (`package.json`, `pom.xml`, `build.gradle`, `pyproject.toml`, `go.mod`, etc.) before any task to infer test framework, conventions, and project structure.
 
 ## Test Strategy
 

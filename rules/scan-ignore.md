@@ -1,12 +1,12 @@
 ---
 name: scan-ignore
-description: Paths and directories to skip when scanning or indexing project structure (repo_map, knowledge base (KB) conventions, navigation). Do not treat agent/IDE config as project content.
+description: Paths and directories to skip when scanning or indexing project structure (knowledge-base conventions and navigation). Do not treat agent/IDE config as project content.
 alwaysApply: false
 ---
 
 # Scan Ignore Rule
 
-When building a project structure index (e.g. repo_map.md), a knowledge base (KB) index, or any "conventions" / navigation view of the repository, **exclude** the following. They are out-of-scope for application structure.
+When building a project structure index, a knowledge base (KB) index, or any "conventions" / navigation view of the repository, **exclude** the following. They are out-of-scope for application structure.
 
 ## Directories to skip
 
@@ -30,4 +30,4 @@ Skip folders that contain only datasets or runtime data (e.g. `.data`, `data/`, 
 
 ## Project .gitignore
 
-When scanning the workspace, **also skip paths that match the project's `.gitignore`** (if present). Treat ignored paths as out-of-scope for repo_map and KB structure. This keeps the scan aligned with what the project considers non-source; no need to duplicate project-specific patterns in this rule.
+When scanning the workspace, **also skip paths that match the project's `.gitignore`** (if present). Treat ignored paths as out-of-scope for project and KB structure. This keeps the scan aligned with what the project considers non-source; no need to duplicate project-specific patterns in this rule.
