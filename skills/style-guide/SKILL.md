@@ -3,7 +3,6 @@ name: style-guide
 description: |-
   Applies the brand writing style to emails, messenger messages, technical documentation, and support content.
   Triggers on user requests to "rewrite", "edit", "polish", "format", "improve tone", "check tone", "make it more friendly", "make it more formal", "apply the style guide", "what are the rules for emails/messenger/techdocs/support", "how should I write a runbook", "how to write a support reply", or "convert this to a tech doc".
-  JIRA tickets are owned exclusively by the jira-builder skill.
   Always writes in English, no emojis, prefers bullet points over tables.
 ---
 
@@ -33,8 +32,6 @@ Apply the correct writing style for the requested content type based on a shared
 3. Read the corresponding `style.md` and `example.md` from the matching folder.
 4. Apply the rules to the user's text.
 5. If the user asks for examples, surface the relevant `example.md` content.
-
-For JIRA creation, rewriting, or formatting, use the `jira-builder` skill instead.
 
 ## Topics
 Each topic lives in its own folder with a rule file and an example file.
