@@ -1,7 +1,7 @@
 ---
 name: _common
 description: Common writing rules that apply to all content types.
-applies_to: [email, messenger, techdocs, support, jira]
+applies_to: [email, messenger, techdocs, support]
 version: 4
 ---
 
@@ -15,7 +15,7 @@ version: 4
 - Prefer bullet points over tables.
 - Use short paragraphs (2-4 sentences max).
 - Use H1/H2 headings for techdocs and support content.
-- For jira, email, and messenger: use plain section labels (`Problem:`, `Goal:`) without `**` markdown bold. Rely on line breaks, labels, and lists for emphasis.
+- For email and messenger, use plain labels without `**` markdown bold. Rely on line breaks, labels, and lists for emphasis.
 - Minimize markdown. Use plain text when possible.
 - Keep messages short and direct. Avoid long walls of text.
 

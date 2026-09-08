@@ -1,6 +1,6 @@
 # Style Guide Skill
 
-Applies the brand writing style to emails, messenger messages, technical documentation, support content, and Jira tickets.
+Applies the brand writing style to emails, messenger messages, technical documentation, and support content. JIRA tickets are handled by the `jira-builder` skill.
 
 ## Structure
 
@@ -17,11 +17,8 @@ style-guide/
 ├── techdocs/
 │   ├── techdocs.md
 │   └── example.md
-├── support/
-│   ├── support.md
-│   └── example.md
-└── jira/
-    ├── jira.md
+└── support/
+    ├── support.md
     └── example.md
 ```
 
@@ -32,16 +29,15 @@ The skill activates on user requests to:
 - check or improve tone
 - make text more friendly or more formal
 - apply the style guide
-- explain the rules for emails, messenger, techdocs, support, or jira
+- explain the rules for emails, messenger, techdocs, or support
 - convert text to a specific content type
-- rewrite or draft a Jira ticket, story, or description
 
 ## Rules
 
 - Always English
 - No emojis
 - Prefer bullet points over tables
-- For email, messenger, and jira: plain text without `**` bold markers
+- For email and messenger: plain text without `**` bold markers
 - No AI traces
 - No prohibitions in style descriptions
 - Expand or avoid abbreviations
@@ -52,4 +48,3 @@ The skill activates on user requests to:
 - **messenger/** — compact, conversational tone for messenger apps (Slack, Teams, Telegram, Discord).
 - **techdocs/** — structured, precise tone for runbooks, technical guides, API references.
 - **support/** — professional, factual tone for IT support tickets written by the person reporting the issue.
-- **jira/** — concise, decision-oriented tone for Jira tickets, stories, and epic descriptions.
