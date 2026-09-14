@@ -1,7 +1,7 @@
-# [managed]
-@~/.agents/rules/clarify-before-planning.md
+# [AUTO-LOAD]
+@~/.agents/rules/enforce-clarity.md
 @~/.agents/rules/no-guessing.md
-# [/managed]
+# [/AUTO-LOAD]
 
 ### File Access & Web Rules
 
