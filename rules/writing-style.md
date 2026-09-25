@@ -7,7 +7,7 @@ description: Professional document writing style - clear headers, logical organi
 
 - Use clear, descriptive headers
 - Organize content logically
-- Use standard markdown formatting
+- Use standard markdown formatting (but minimize bold emphasis)
 - Avoid decorative elements that distract from content
 
 # Human-like Writing Style
@@ -40,3 +40,23 @@ If you see emoji in existing documents, remove them and replace with the plain t
 - Maintain consistent formatting within each document
 - Use the same style for similar elements (headers, lists, emphasis)
 - Follow existing document patterns when updating or creating related content
+
+# Clean File Formatting
+
+All created and edited text files must adhere to the following technical formatting rules:
+
+## 1. No Trailing Whitespaces
+
+CATEGORICAL REQUIREMENT: Never leave any spaces or tab characters at the end of lines. Before writing a file or applying an edit, all text must be stripped of invisible trailing whitespaces.
+
+## 2. Dash Standardization
+
+Use exclusively the standard hyphen/short dash - (U+002D) for lists, word separation, and all other purposes. En-dash (–) and em-dash (—) are strictly prohibited.
+
+## 3. Line Endings
+
+Use only Unix line endings (LF). Windows line endings (CRLF) are prohibited.
+
+## 4. Minimize Bold Emphasis
+
+Minimize the use of double asterisks (**) for bold text. Use them only where critically important for emphasis, avoiding overloading text with bold formatting.

@@ -1,6 +1,7 @@
 # [AUTO-LOAD]
 @~/.agents/rules/enforce-clarity.md
 @~/.agents/rules/no-guessing.md
+@~/.agents/rules/writing-style.md
 # [/AUTO-LOAD]
 
 ### File Access & Web Rules
