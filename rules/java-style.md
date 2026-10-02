@@ -23,3 +23,15 @@ Apply this in both main and test code when the dependency is on the classpath.
   - For JPA entities, add `@NoArgsConstructor` (at least protected) for JPA compatibility.
 - **MapStruct**: Mappers remain interfaces with `@Mapper(componentModel = "spring")`; Lombok integration is already included (`lombok-mapstruct-binding`).
 - **AI/Codegen policy**: When generating new code, always add the corresponding Lombok annotations; do not write manual getters/setters/loggers.
+
+## Imports
+
+Do **not** use star imports (`import package.*;`). Import only the classes that are actually used, one per line.
+
+**Why:**
+- Makes it clear which types each file uses.
+- Reduces naming conflicts and surprises.
+- Keeps diffs and code reviews cleaner when new types are added.
+
+**Example (Avoid):**
+`import org.springframework.web.bind.annotation.*;`

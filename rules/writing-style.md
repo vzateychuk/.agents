@@ -3,6 +3,8 @@ name: writing-style
 description: Professional document writing style - clear headers, logical organization, standard markdown. Avoid decorative elements that distract from content.
 ---
 
+This guide applies to general communication (emails, chat, documentation). For specialized formats (like Git commits or source code), follow the respective specialized rules first.
+
 # Professional Appearance
 
 - Use clear, descriptive headers
