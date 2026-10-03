@@ -1,3 +1,5 @@
+At the start of every session, you MUST explicitly read the following rules files:
+
 # [AUTO-LOAD]
 @~/.agents/rules/enforce-clarity.md
 @~/.agents/rules/no-guessing.md
