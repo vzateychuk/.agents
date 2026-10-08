@@ -1,58 +1,30 @@
 ---
 name: enforce-clarity
-description: >-
-  Clarity ALWAYS wins over brevity. Пиши для человека — без сленга и нерасшифрованных
-  аббревиатур. При конфликте с «коротко/по делу» — побеждает ясность.
+description: Explain every term in plain words. No abbreviations. Clarity over brevity.
 alwaysApply: true
 ---
 
-# Человекочитаемые ответы
+# Explain Every Term
 
-## Приоритет
+MAIN RULE: Every technical term must be explained in plain words. Abbreviations are forbidden.
+- Never use abbreviations. Always write the full words: "pull request", not "PR".
+- Explain every technical term, tool name, and internal name at first use: "Maven (a build tool for Java projects)".
+- Never show a code name without explaining it: "`bom_lookup` (the check that finds library versions in the approved list)".
+- Never write arrow chains like `Path A -> SA -> POC`. Write full sentences.
 
-Ясность — это базовое условие. Если пользователь просит быть кратким («по делу», «sentence or two»), ассистент должен максимально сократить текст, **но не ценой потери понятности**.
+Clarity always wins over brevity. A short but unclear answer is a violation.
+When asked to be brief: cut intros and minor details, but keep every explanation.
+- Write for a reader who has not seen the previous conversation.
+- Use short, simple sentences and bullet lists.
+- Say who does each action: the user, the code, or the system.
+- In chat, never copy Case status text verbatim.
+- After save or lint: 2-5 plain bullets: what is done, what is next.
 
-| Ситуация | Требование к результату |
-|----------|-------------------------|
-| Запрос на краткость vs понятность | Кратко, но без жаргона и потери смысла |
-| «Статус в одну строку» vs расшифровка | Максимально сжато, но понятно человеку |
-| Язык wiki/кода/тикета vs язык человеку в чате | Язык человеку (даже в кратком ответе) |
-| Телеграф id (`bom_lookup`, Boot -> BOM, PR) vs простые фразы | Простые фразы |
+BAD: `Ticket Open / High. Done: tests/bom_lookup. Next: parent POM + PR.`
+GOOD: `The task in Jira (the team task tracker) is open with high priority. The scanner already finds the Spring Framework version when a project lists only Spring Boot. Next: read versions from the parent Maven file (the shared list of library versions) and send the changes for review as a pull request.`
 
-Краткий, но непонятный ответ = нарушение. Ответ может быть очень коротким, если он остается прозрачным.
-
-После save/lint: 2–5 понятных пунктов «что готово / что дальше», не телеграф Case
-(`Done: X/Y. Next: plugin + parent POM + PR`).
-
-В `wiki/` / `raw/` технические id допустимы как в источнике. В чате с человеком —
-только человеческий язык; не копировать Статус Case один в один.
-
-## Как писать
-
-- Простые предложения; списки вместо плотной каши из ключей.
-- **Баланс краткости:** если запрошена краткость, убирайте вводные слова и детали, но оставляйте суть и понятные термины.
-- Сленг и неочевидные аббревиатуры — сразу по смыслу (или расшифровка при первом упоминании).
-  Не вываливать жаргон, а потом переводить.
-- Запрещён «агентский телеграф»: `Path A -> SA -> POC` без расшифровки переходов.
-- Не писать так, будто человек руками делает то, что на самом деле делает код/система.
-
-## Пример
-
-[BAD] Тикет Open / High. Уже есть: тесты/bom_lookup, harness Boot -> Framework,
-synthetic spring-core. Дальше: parent POM + PR.
-
-[GOOD] Задача в Jira открыта, приоритет высокий. Уже умеем брать версию Spring Framework
-из согласованного списка в Artifactory, когда в проекте указан только Spring Boot.
-Дальше — научить сканер читать версии из корпоративного Gradle-плагина и из родительского
-файла зависимостей Maven, проверить на двух репозиториях-примерах и отправить изменения
-на проверку.
-
-## Чек-лист перед финальным ответом
-
-Не отправлять, пока все пункты — «да»:
-
-1. Понятно человеку без контекста прошлой переписки?
-2. Нет необъяснённого сленга / неочевидных аббревиатур?
-3. Сложное объяснено простыми фразами (при необходимости — по шагам)?
-4. Нет ощущения, что «человек руками делает X», хотя это делает система?
-5. Краткость не победила ясность?
+Before sending, check every sentence:
+1. Is every abbreviation replaced with full words?
+2. Is every technical term explained in plain words?
+3. Would a newcomer understand it without the previous conversation?
+If any answer is "no", rewrite.

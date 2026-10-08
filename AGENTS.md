@@ -1,10 +1,11 @@
-At the start of every session, you MUST explicitly read the following rules files:
+You MUST explicitly READ and follow the following rules files:
 
-# [AUTO-LOAD]
-@~/.agents/rules/enforce-clarity.md
-@~/.agents/rules/no-guessing.md
-@~/.agents/rules/writing-style.md
-# [/AUTO-LOAD]
+# [READ-RULES]
+/home/vez/.agents/rules/enforce-clarity.md
+/home/vez/.agents/rules/no-guessing.md
+/home/vez/.agents/rules/writing-style.md
+/home/vez/.agents/rules/respect-gitignore.md
+# [/READ-RULES]
 
 ### File Access & Web Rules
 
