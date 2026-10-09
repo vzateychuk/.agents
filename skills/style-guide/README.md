@@ -1,50 +1,23 @@
-# Style Guide Skill
+# Style Guide Skill (human docs)
 
-Applies the brand writing style to emails, messenger messages, technical documentation, and support content. JIRA tickets are handled by the `jira-builder` skill.
+For agents: use `SKILL.md` as the router. Do not load this README into the prompt.
 
 ## Structure
 
 ```
 style-guide/
-├── SKILL.md          # main manifest
-├── _common.md        # shared rules for all content types
+├── SKILL.md              # router (load one topic only)
+├── style-guide-lite.md   # compact rules for small models
+├── _common.md            # shared rules
 ├── emails/
-│   ├── email.md
-│   └── example.md
 ├── messenger/
-│   ├── messenger.md
-│   └── example.md
 ├── techdocs/
-│   ├── techdocs.md
-│   └── example.md
 └── support/
-    ├── support.md
-    └── example.md
 ```
 
-## Triggers
+Each topic folder has a rule file and an optional `example.md` (load examples only on request).
 
-The skill activates on user requests to:
-- rewrite, edit, polish, format text
-- check or improve tone
-- make text more friendly or more formal
-- apply the style guide
-- explain the rules for emails, messenger, techdocs, or support
-- convert text to a specific content type
-
-## Rules
-
-- Always English
-- No emojis
-- Prefer bullet points over tables
-- For email and messenger: plain text without `**` bold markers
-- No AI traces
-- No prohibitions in style descriptions
-- Expand or avoid abbreviations
-
-## Topics
-
-- **emails/** — friendly peer emails and formal HR, operations, bank, or advisor requests.
-- **messenger/** — compact, conversational tone for messenger apps (Slack, Teams, Telegram, Discord).
-- **techdocs/** — structured, precise tone for runbooks, technical guides, API references.
-- **support/** — professional, factual tone for IT support tickets written by the person reporting the issue.
+## Rules of thumb
+- Always English, no emojis, prefer bullets over tables
+- Email / messenger: plain text without `**` bold
+- Lazy load: one content type per turn

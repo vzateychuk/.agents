@@ -1,67 +1,38 @@
 ---
 name: commit-message
-description: |-
-  Auto-generate a clear, conventional commit message from diff or user request.
-  Triggers on any "make a commit", "push", or similar user requests even if they don't say
-  "write commit message". Applies to any project and VCS.
+description: >-
+  Write a conventional commit message from a diff or staged changes.
+  Use when the user asks to make a commit, write a commit message, or commit
+  and push. Do not use for push-only or unrelated git questions.
 license: MIT
 allowed-tools: Bash
 ---
 
-# Commit Message — Auto-generation
+# Commit message
 
-## Core Rules
-- Imperative mood: "Add feature" not "Added feature"
-- First line: max 50 chars
-- Body: wrapped at 72 chars, bullet points with verbs
-- NO emojis or Unicode symbols anywhere in the message
-- NO AI/tool mentions: forbidden phrases include "Generated with", "Co-Authored-By: Claude", "AI consultant", "Created by AI", or any reference to AI tools
-- No secrets (.env, credentials, keys)
-- Focus on WHAT and WHY (business intent), not HOW (implementation)
-- Reference issue-ID when applicable (e.g., "Closes #42")
+## Rules
+1. Read the diff or staged files. Do not invent changes that are not there.
+2. Subject: imperative mood, max 50 characters, format `(<type>) description` or `type(scope): description`.
+3. Body (if needed): bullets with verbs, wrap at 72 characters; say what and why, not how.
+4. Prefer business outcome wording. Technical wording only for mechanical changes (rename, deps).
+5. No emojis, Unicode symbols, AI/tool mentions, or secrets (.env, credentials, keys).
+6. Reference an issue when applicable (for example `Closes #42`).
+7. Project-specific conventions override these rules.
 
-## Triggers (auto-detect)
-- User says: "make a commit", "commit that", "push these", "write commit message"
-- Context shows: diff, staged files, or `git status` with actual changes
+## Types
+- `feat` - new feature
+- `fix` - bug fix
+- `refactor` - restructure with no behavior change
+- `test` - add or update tests
+- `docs` - documentation only
+- `chore` - maintenance, dependencies, cosmetics
 
-## Process
-1. Identify changes from diff/staged files (do not infer if unclear)
-2. Draft one-line summary in imperative form, ≤ 50 chars
-3. Use format: `(<type>) description` (e.g., `feat(api): add user deletion`)
-4. Draft body: bullet points with verbs; wrap at 72 chars
-5. Verify: no emojis, no AI/tool mention, neutral tone, no secrets
+## Example
 
-## Main Commit Types (6)
-| Type | Purpose | Example |
-|------|---------|---------|
-| `feat` | New feature | `feat(auth): add OAuth2 support` |
-| `fix` | Bug fix | `fix(ui): modal close button unresponsive` |
-| `refactor` | Code restructure (no behavior change) | `refactor(api): move logic to service layer` |
-| `test` | Add/update tests | `test(checkout): cover edge cases` |
-| `docs` | Documentation only | `docs(readme): add install instructions` |
-| `chore` | Maintenance, deps, cosmetics | `chore(deps): upgrade jest to 30.0` |
-
-Other types: `build` (build config), `ci` (CI/CD), `perf` (performance), `style` (formatting).
-
-## Style Guide
-- **Business outcome wording** (not implementation):
-  - GOOD: (feat) Add user address deletion
-  - BAD: (refactor) Extract deleteAddress() to service
-- Technical wording allowed only for mechanical changes (renames, deps)
-- Keep it brief; avoid filler
-
-## Example Commits
-
+```
 (feat) Add customer review moderation
 - Introduce ReviewModerator service
-- Scan /reviews endpoint with moderation rules
-- Store status in database, expose in admin panel
+- Scan /reviews with moderation rules
+- Store status for the admin panel
 Closes #42
-
-(fix) Cart items persist after session logout
-- Clear local storage on logout
-- Verify session token before API calls
-- Add test for persistence cleanup
-
-## Scope
-Applies to Git and any other VCS. Project-specific conventions may override base rules.
+```

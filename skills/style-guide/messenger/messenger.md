@@ -1,39 +1,17 @@
 ---
 name: messenger-compact
-description: Compact, conversational tone for messenger apps like Slack, Teams, Telegram, Discord. Used with development team, team leads, managers, and colleagues.
+description: Compact conversational tone for Slack, Teams, Telegram, Discord.
 applies_to: [messenger]
 tone: conversational
 audience: [developer, team lead, manager, colleague]
-version: 4
+version: 5
 ---
 
-# Messenger Style — Compact & Conversational
+# Messenger
 
-## Tone
-- Conversational and direct.
-- Use short sentences.
-- Address the reader with "you" or "@name" if needed.
-- Keep messages short. One idea per line.
+Assume `_common.md` is already loaded.
 
-## Structure
-- Lead with the main point in the first line.
-- Use bullet points for lists of 3+ items.
-- Keep messages under 80 words when possible.
-- Prefer plain text or light formatting.
-
-## Vocabulary
-- "ping me"
-- "let me know"
-- "fyi" (acceptable in messenger context)
-- "on it"
-- "sounds good"
-- Use plain words the reader expects.
-
-## Formatting
-- One idea per line.
-- Always write in English.
-- Prefer plain text without `**` markdown bold. Use line breaks and lists for emphasis.
-- Use `code` formatting for technical terms or commands.
-
-## Edge Cases
-- For very short messages (under 10 words), a single line is enough.
+- Main point in the first line. One idea per line. Under ~80 words when possible.
+- Bullets for 3+ items. Plain text; `code` for commands.
+- Short phrases are fine ("ping me", "on it", "sounds good"). "fyi" is acceptable here.
+- Under 10 words: a single line is enough.

@@ -4,7 +4,7 @@ You MUST explicitly READ and follow the following rules files:
 /home/vez/.agents/rules/enforce-clarity.md
 /home/vez/.agents/rules/no-guessing.md
 /home/vez/.agents/rules/writing-style.md
-/home/vez/.agents/rules/respect-gitignore.md
+/home/vez/.agents/rules/tool-priority.md
 # [/READ-RULES]
 
 ### File Access & Web Rules

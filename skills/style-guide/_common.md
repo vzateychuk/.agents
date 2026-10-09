@@ -1,34 +1,17 @@
 ---
 name: _common
-description: Common writing rules that apply to all content types.
+description: Shared writing rules for all style-guide content types.
 applies_to: [email, messenger, techdocs, support]
-version: 4
+version: 5
 ---
 
-# Common Writing Rules
+# Common writing rules
 
-## Language
-- Always write in English.
-- No emojis anywhere.
-
-## Structure
-- Prefer bullet points over tables.
-- Use short paragraphs (2-4 sentences max).
-- Use H1/H2 headings for techdocs and support content.
-- For email and messenger, use plain labels without `**` markdown bold. Rely on line breaks, labels, and lists for emphasis.
-- Minimize markdown. Use plain text when possible.
-- Keep messages short and direct. Avoid long walls of text.
-
-## Grammar & Spelling
-- Write correct English, avoid slang.
-- Avoid or explicitly expand abbreviations (FYI → for your information, e.g. → for example, i.e. → that is).
-- Use the Oxford comma in lists.
-- Spell out numbers one through nine in running prose; use digits for 10 and above.
-- Always use digits for versions, percentages, and measurements (v2, 12%, 3 ms).
-- Use sentence case for headings, not Title Case.
-
-## Tone
-- Be clear and direct.
-- No AI traces.
-- No prohibitions or warnings inside style descriptions.
-- Use gender-neutral pronouns (they, them) unless referring to a known person.
+- Always English. No emojis.
+- Prefer bullets over tables. Short paragraphs (2-4 sentences).
+- Email / messenger: plain labels, no `**` bold; line breaks and lists for emphasis.
+- Minimize markdown. Keep messages short.
+- Correct English, no slang. Expand or avoid abbreviations.
+- Oxford comma. Spell out numbers one through nine; digits for 10+, versions, percentages, measurements.
+- Sentence case for headings. Gender-neutral pronouns (they, them) unless referring to a known person.
+- Clear and direct. No AI traces. No prohibitions inside style descriptions.
