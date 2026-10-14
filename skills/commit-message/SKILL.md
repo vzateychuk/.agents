@@ -10,12 +10,12 @@ allowed-tools: Bash
 
 # Commit message
 
-## Rules
+## Steps
 1. Read the diff or staged files. Do not invent changes that are not there.
 2. Subject: imperative mood, max 50 characters, format `(<type>) description` or `type(scope): description`.
-3. Body (if needed): bullets with verbs, wrap at 72 characters; say what and why, not how.
-4. Prefer business outcome wording. Technical wording only for mechanical changes (rename, deps).
-5. No emojis, Unicode symbols, AI/tool mentions, or secrets (.env, credentials, keys).
+3. Body (if needed): blank line after subject; bullets with verbs; wrap at 72; what and why, not how.
+4. Prefer business outcome where it fits (preference, not hard rule). Technical wording for rename or dependencies.
+5. Forbidden: emojis or decorative Unicode; AI/tool mentions (Claude, Copilot, Cursor, "Generated with…", `Co-Authored-By: Claude`); secrets (`.env`, credentials, keys, tokens).
 6. Reference an issue when applicable (for example `Closes #42`).
 7. Project-specific conventions override these rules.
 
