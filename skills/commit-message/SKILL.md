@@ -4,7 +4,6 @@ description: >-
   Write a conventional commit message from a diff or staged changes.
   Use when the user asks to make a commit, write a commit message, or commit
   and push. Do not use for push-only or unrelated git questions.
-license: MIT
 allowed-tools: Bash
 ---
 
