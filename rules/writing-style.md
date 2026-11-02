@@ -37,6 +37,10 @@ All generated documents should look as if written by a human:
 
 All created and edited text files must adhere to the following technical formatting rules:
 
+## 0. Avoid '→'
+
+Use combination: '->' instead.
+
 ## 1. No Trailing Whitespaces
 
 CATEGORICAL REQUIREMENT: Never leave any spaces or tab characters at the end of lines. Before writing a file or applying an edit, all text must be stripped of invisible trailing whitespaces.
