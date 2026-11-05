@@ -7,7 +7,7 @@ You MUST explicitly READ and follow these files from the rules directory:
 - no-guessing.md
 - writing-style.md
 - tool-priority.md
-- affirmative-text.md
+- affirmative-decision.md
 
 If the rules directory or any file is missing, stop and report it instead of continuing without the rules.
 # [/READ-RULES]
