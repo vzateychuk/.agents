@@ -1,58 +1,38 @@
---
+---
 name: writing-style
-description: Professional document writing style - clear headers, logical organization, standard markdown. Avoid decorative elements that distract from content.
+description: Plain, human-style writing for all text and files. Hard rules on punctuation, emoji, lists and file formatting.
 alwaysApply: true
 ---
 
-This guide applies to general communication (emails, chat, documentation). For specialized formats (like Git commits or source code), follow the respective specialized rules first.
+Applies to chat replies, documentation, comments and any text files. Git commit format and language-specific code style take precedence where they differ.
 
-# Professional Appearance
+# Hard rules
 
-- Use clear, descriptive headers
-- Organize content logically
-- Use standard markdown formatting (but minimize bold emphasis)
-- Avoid decorative elements that distract from content
+Write mostly in short paragraphs. Use a list only for parallel items or ordered steps, never for explanations. Two or three related points go into one sentence. Do not nest lists.
 
-# Human-like Writing Style
+Do not use bold except for a warning the reader must not miss. Do not use bold for list item names or section labels.
 
-All generated documents should look as if written by a human:
+Use only the hyphen-minus (U+002D) as a dash. Never use the characters U+2013 and U+2014. Write "a - b", not an em dash.
 
-- Use natural, professional language
-- Avoid overly formal or robotic phrasing
-- Use consistent formatting throughout
-- Maintain appropriate tone for the document type
-- Follow standard business/technical documentation conventions
+Write arrows as "->". Never use the character U+2192.
 
-# No Emoji Policy
+Never use emoji or pictographic symbols (check marks, crosses, stars, warning
+signs) anywhere, including code comments.
 
-**STRICT RULE** with NO exceptions. NEVER use emoji, Unicode symbols, or any graphical characters (like checkmarks, crosses, stars, flags, warning signs, etc.) in ANY documents, code comments, or documentation files.
+Files must use LF line endings and have no trailing spaces or tabs.
 
-# Consistency
+# Style
 
-- Maintain consistent formatting within each document
-- Use the same style for similar elements (headers, lists, emphasis)
-- Follow existing document patterns when updating or creating related content
+Use descriptive headers and a logical order. Keep formatting consistent within a document. Write natural, plain language without filler or formal phrasing.
 
-# Clean File Formatting
+# Examples
 
-All created and edited text files must adhere to the following technical formatting rules:
+Bad: "Key points: - **Speed** - fast. - **Cost** - low."
+Good: "The service is fast and cheap to run."
 
-## 0. Avoid '→'
+Bad: "Step 1 -> done" with a check mark and an em dash.
+Good: "Step 1 -> done"
 
-Use combination: '->' instead.
+# Before finishing
 
-## 1. No Trailing Whitespaces
-
-CATEGORICAL REQUIREMENT: Never leave any spaces or tab characters at the end of lines. Before writing a file or applying an edit, all text must be stripped of invisible trailing whitespaces.
-
-## 2. Dash Standardization
-
-Use exclusively the standard hyphen/short dash - (U+002D) for lists, word separation, and all other purposes. En-dash (–) and em-dash (—) are strictly prohibited.
-
-## 3. Line Endings
-
-Use only Unix line endings (LF). Windows line endings (CRLF) are prohibited.
-
-## 4. Minimize Bold Emphasis
-
-Minimize the use of double asterisks (**) for bold text. Use them only where critically important for emphasis, avoiding overloading text with bold formatting.
+Re-read the text once and fix any use of the forbidden characters, bold labels, or lists that should be prose.

@@ -1,9 +1,13 @@
-You MUST explicitly READ and follow the following rules files:
-
 # [READ-RULES]
-/home/vez/.agents/rules/enforce-clarity.md
-/home/vez/.agents/rules/no-guessing.md
-/home/vez/.agents/rules/writing-style.md
-/home/vez/.agents/rules/tool-priority.md
-# [/READ-RULES]
+Rules directory: `~/.agents/rules/`
+Resolve `~` to the current user's home directory (for example, with `echo $HOME`) before reading.
 
+You MUST explicitly READ and follow these files from the rules directory:
+- enforce-clarity.md
+- no-guessing.md
+- writing-style.md
+- tool-priority.md
+- affirmative-text.md
+
+If the rules directory or any file is missing, stop and report it instead of continuing without the rules.
+# [/READ-RULES]
