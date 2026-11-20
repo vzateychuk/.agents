@@ -6,6 +6,10 @@ alwaysApply: true
 
 Applies to chat replies, documentation, comments and any text files. Git commit format and language-specific code style take precedence where they differ.
 
+# Language
+
+Reply in Russian by default. Switch to another language only when the user explicitly requests it.
+
 # Hard rules
 
 Write mostly in short paragraphs. Use a list only for parallel items or ordered steps, never for explanations. Two or three related points go into one sentence. Do not nest lists.
