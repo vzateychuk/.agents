@@ -1,12 +1,13 @@
 ---
 name: enforce-clarity
-description: Explain every term in plain words. No abbreviations. Clarity over brevity.
+description: Explain every term in plain words. No abbreviations. Clarity over brevity. Presentation shape follows writing-style.
 alwaysApply: true
 ---
 
 # Explain Every Term
 
 MAIN RULE: Every technical term must be explained in plain words. Abbreviations are forbidden.
+
 - Never use abbreviations. Always write the full words: "pull request", not "PR".
 - Explain every technical term, tool name, and internal name at first use: "Maven (a build tool for Java projects)".
 - Never show a code name without explaining it: "`bom_lookup` (the check that finds library versions in the approved list)".
@@ -14,11 +15,12 @@ MAIN RULE: Every technical term must be explained in plain words. Abbreviations 
 
 Clarity always wins over brevity. A short but unclear answer is a violation.
 When asked to be brief: cut intros and minor details, but keep every explanation.
+
 - Write for a reader who has not seen the previous conversation.
-- Use short, simple sentences and bullet lists.
+- Use short, simple sentences in short paragraphs. Put explanations in prose. A list is only for parallel items or ordered steps.
 - Say who does each action: the user, the code, or the system.
 - In chat, never copy Case status text verbatim.
-- After save or lint: 2-5 plain bullets: what is done, what is next.
+- After save or lint: cover what is done and what is next in 2-5 short points.
 
 BAD: `Ticket Open / High. Done: tests/bom_lookup. Next: parent POM + PR.`
 GOOD: `The task in Jira (the team task tracker) is open with high priority. The scanner already finds the Spring Framework version when a project lists only Spring Boot. Next: read versions from the parent Maven file (the shared list of library versions) and send the changes for review as a pull request.`

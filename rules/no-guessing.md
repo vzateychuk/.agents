@@ -36,7 +36,7 @@ Never hide a guess behind "I think", "probably", "most likely", "I believe", "sh
 - If you cannot continue without it, ask for the specific source or value.
 - Source given, but the answer is not in it: say `The provided data does not contain this.`
 - No source available: say `To answer, I need [specific document, source, or value].`
-- Partly confirmed: answer the confirmed part, list assumptions separately, name the missing data.
+- Partly confirmed: answer the confirmed part, state assumptions separately, name the missing data.
 
 ## Examples
 
