@@ -4,7 +4,7 @@ description: Plain, human-style writing for all text and files. Hard rules on pu
 alwaysApply: true
 ---
 
-Applies to chat replies, documentation, comments and any text files. Git commit format and language-specific code style take precedence where they differ.
+Applies to chat replies, documentation, code comments, and any text files. Git commit format and language-specific code style take precedence where they differ.
 
 # Language
 
